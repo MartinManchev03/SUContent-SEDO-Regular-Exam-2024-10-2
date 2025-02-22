@@ -1,4 +1,4 @@
-name: UnitTestRun
+name: Build and Run Unit tests
 
 on:
   push:
@@ -20,5 +20,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Run uni tests
+    - name: Run unit tests
       run: dotnet test Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal
